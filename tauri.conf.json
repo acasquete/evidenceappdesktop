@@ -1,0 +1,34 @@
+{
+  "$schema": "https://schema.tauri.app/config/2",
+  "build": {
+    "beforeDevCommand": "pnpm vite dev",
+    "beforeBuildCommand": "pnpm vite build",
+    "devUrl": "http://localhost:5173",
+    "frontendDist": "../dist"
+  },
+  "productName": "Evidence App",
+  "version": "0.1.0",
+  "identifier": "com.example.evidenceapp",
+  "bundle": {
+    "active": true,
+    "targets": "all",
+    "icon": [],
+    "macOS": {
+      "signingIdentity": "Developer ID Application: YOUR NAME (TEAMID)",
+      "entitlements": null
+    },
+    "windows": {
+      "certificateThumbprint": "",
+      "timestampUrl": ""
+    }
+  },
+  "plugins": {
+    "updater": {
+      "active": true,
+      "endpoints": ["https://updates.example.com/{{target}}/{{current_version}}"],
+      "dialog": true,
+      "pubkey": "ADD_YOUR_PUBKEY",
+      "channel": "stable"
+    }
+  }
+}

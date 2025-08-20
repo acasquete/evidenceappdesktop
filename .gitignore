@@ -1,0 +1,15 @@
+# Node
+node_modules
+.pnpm*
+dist
+src-tauri/target
+pnpm-lock.yaml
+# Generated Cargo lockfile
+src-tauri/Cargo.lock
+# Rust
+/target
+**/*.rs.bk
+# Env
+# Mac
+.DS_Store
+src-tauri/gen
